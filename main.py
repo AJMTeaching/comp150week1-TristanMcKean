@@ -3,8 +3,23 @@
 # Lab 1
 # Problem 1
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
-
+problem1_list = [1, 5, 'apple', 20.5]
+print(problem1_list[2])
+problem1_list.append(10)
+print(problem1_list)
+problem1_list.remove(20.5)
+print(problem1_list)
+problem1_list.reverse()
+print(problem1_list)
 # Problem 2
+person_dict = {'name': 'John', 'age': '30', 'job': 'teacher'}
+print(person_dict['job'])
+person_dict['city'] = 'Paris'
+print(person_dict)
+del person_dict['age']
+print(person_dict)
+for key, value in person_dict.items():
+    print(f"Key: {key}, Value: {value}")
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
 # -----------------------------------------------------------------------------
