@@ -39,6 +39,7 @@ def test(did_pass):
 
 # Function 1: count_vowels
 def count_vowels(s: str) -> int:
+    
     """
     Count the number of vowels in a string.
 
@@ -100,6 +101,11 @@ def test_merge_lists():
 
 # Function 3: word_lengths
 def word_lengths(words: list) -> list:
+    lengths = []
+    for word in words:
+        lengths.append(len(word))
+    return lengths
+
     """
     Get the lengths of words in a list.
 
@@ -127,6 +133,11 @@ def test_word_lengths():
 
 # Function 4: reverse_string
 def reverse_string(s: str) -> str:
+    reversed_stri = ""
+    for char in s:
+        reversed_stri = char + reversed_stri
+
+    return reversed_stri
     """
     Reverse a string.
 
