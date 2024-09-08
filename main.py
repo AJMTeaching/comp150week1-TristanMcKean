@@ -39,7 +39,15 @@ def test(did_pass):
 
 # Function 1: count_vowels
 def count_vowels(s: str) -> int:
-    
+    vowels = "AEIOUaeiou"
+    count = 0
+
+    for character in s:
+        if character in vowels:
+            count += 1
+
+    return count
+
     """
     Count the number of vowels in a string.
 
@@ -69,6 +77,7 @@ def test_count_vowels():
 
 # Function 2: merge_lists
 def merge_lists(list1: list, list2: list) -> list:
+
     """
     Merge two sorted lists into a single sorted list.
 
